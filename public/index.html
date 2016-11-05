@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="mathApp">
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
@@ -15,14 +15,12 @@
         </ul>
     </nav>
 
-    <section class="row">
+    <section class="row" ng-controller="test as tester">
         <div class="col col-1">
-            <h1>First</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique sint deleniti, maxime rem expedita eius nisi corporis voluptatum nam veritatis accusamus quod perferendis, illo, nesciunt eligendi consectetur pariatur fugit dolor.</p>
+            {{tester.message}}
         </div>
         <div class="col col-2">
-            <h1>Second</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur assumenda tenetur recusandae sed odio facilis nisi iste doloribus vel aliquam, illo praesentium hic qui, nobis magnam ipsam architecto esse sequi.</p>
+            <math-directions></math-directions>
         </div>
     </section>
 
@@ -33,6 +31,11 @@
         </div>
     </footer>
 
+<script src="./vendors/angular.min.js"></script>
+<script src="./vendors/angular-route.min.js"></script>
+<script src="./app/app.module.js"></script>
+<script src="./app/components/testing/test.js"></script>
+<script src="./app/components/directions/directions.directive.js"></script>
 
 </body>
 </html>
