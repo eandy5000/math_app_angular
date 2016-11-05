@@ -2,11 +2,14 @@
     box-sizing: border-box;
 }
 
-body, nav {
+body {
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
     background-color: #E1DEE3;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 /*==============================
@@ -44,6 +47,25 @@ body, nav {
 .main-nav a {
     text-decoration: none;
 }
+
+/*==============================
+    Body
+===============================*/
+ 
+.row {
+    flex-grow: 1;
+}
+
+/*==============================
+    Footer
+===============================*/
+
+footer {
+    text-align: center;
+    border-top: .3em solid;
+    background-color: #444;
+}
+
 
 /*==============================
     Media Queries
