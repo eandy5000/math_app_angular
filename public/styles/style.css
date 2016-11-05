@@ -54,6 +54,13 @@ body {
  
 .row {
     flex-grow: 1;
+    padding: 1em;
+}
+.col {
+    background-color: #F8DDA4;
+    padding: 1em;
+    border-radius: 1em;
+    margin: 1.3em;
 }
 
 /*==============================
@@ -63,7 +70,7 @@ body {
 footer {
     text-align: center;
     border-top: .3em solid;
-    background-color: #444;
+    background-color: #fff;
 }
 
 
@@ -81,6 +88,10 @@ footer {
         display: flex;
         justify-content: center;
     }
+
+    .row {
+        display: flex;
+    }
 }
 
 @media (min-width: 1125px) {
@@ -94,6 +105,18 @@ footer {
     .nav-list {
         display: flex;
     }
+    .row {
+        display: flex;
+    }
+
+    .col {
+        flex: 1;
+    }
+    .col-1 {
+        flex-grow: 3;
+    }
+
+
   
 }
 
