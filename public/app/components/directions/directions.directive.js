@@ -1,7 +1,16 @@
 (function(){
+//in a directive the controller in a custom directive
+
+    var directionsController = function() {
+        var vm = this
+        vm.message = "I'm from the controller"
+    }
+    
     var directions = function () {
         return {
-            template: '<h1>template is working</h1>'
+            templateUrl: './app/components/directions/directions.html',
+            controller: directionsController,
+            controllerAs: 'vm'
         }
     }
 
