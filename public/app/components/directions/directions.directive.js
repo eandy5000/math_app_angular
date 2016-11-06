@@ -5,6 +5,7 @@
         var vm = this
         vm.message = "I'm from the controller"
     }
+
     
     var directions = function () {
         return {

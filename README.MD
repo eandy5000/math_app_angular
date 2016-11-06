@@ -2,3 +2,4 @@
 
 * express server
 * flexbox mobile first layout
+* angular 
